@@ -1,9 +1,8 @@
 import sys
 
-# x = sys.argv[1]
-# n = int(x)
+nbr = int(sys.argv[1])
+list = []
 
-# for x in range(1, int(x) + 1):
-#     s = int(n) - int(x)
-#     print(str(' ') * int(s), int(x) * str('#'))
-
+for i in range(1, nbr + 1):
+    list.append(" " * (nbr - i) + ("#" * i))
+print('\n'.join(list))
